@@ -9,25 +9,25 @@
     <div class="form-group">
         @Html.LabelFor( m => m.Name )
         @Html.TextBoxFor( m => m.Name , new { @class = "form-control"} )
-        @Html.ValidationMessageFor( m => m.Name )
+        @Html.ValidationMessageFor( m => m.Name, null, new { @class = "text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor( m => m.Author )
         @Html.TextBoxFor( m => m.Author, new { @class = "form-control"})
-        @Html.ValidationMessageFor( m => m.Author )
+        @Html.ValidationMessageFor( m => m.Author, null, new { @class = "text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.DatePublished)
         @Html.TextBoxFor(m => m.DatePublished, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.DatePublished)
+        @Html.ValidationMessageFor(m => m.DatePublished, null, new { @class = "text-danger"})
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.Rating)
         @Html.TextBoxFor(m => m.Rating, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Rating)
+        @Html.ValidationMessageFor(m => m.Rating, null, new { @class = "text-danger"})
     </div>
 
     <button type="submit" class="btn btn-default">
